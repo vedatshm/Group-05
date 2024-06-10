@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4TPVaI5Nf0eb7dSziYxqjQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://ai.lab.hm.edu/interface" DesignTimeRectangle="527, 822, 316, 120" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'TEXTAREA'" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' type='text' class='input-field' aaname='' /&gt;" Guid="688a4a02-9e84-4451-bab1-ba4bcb4d98c6" ScopeSelectorArgument="&lt;html app='msedge.exe' title='HM-KI' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="467, 774, 495, 226" FriendlyName="'System Prompt:'" FullSelectorArgument="&lt;webctrl class='input-container' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='input-container' tag='DIV' type='' aaname=' &amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9; &amp;#x9;' check:innerText='Version 1.0' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b68e7518b99e176f40227d8732b7722d.png" xmlns="">0_30X9LFyP0uCnX24sqRnxw</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge: HM-KI",
+  "Type": "App",
+  "Id": "xg6OaNz2qEuTO-UOhUKS0w",
+  "Reference": "PxXJJuDVtEyKTjAMlPTo5w/xg6OaNz2qEuTO-UOhUKS0w",
+  "Created": "2024-06-10T14:41:43.6433927Z",
+  "Updated": "2024-06-10T14:41:43.6433927Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

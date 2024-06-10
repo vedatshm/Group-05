@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Edge: HM-KI",
+  "Type": "Screen",
+  "Id": "vM2HtSrgmUmI2vL_sW1Z5g",
+  "Reference": "PxXJJuDVtEyKTjAMlPTo5w/vM2HtSrgmUmI2vL_sW1Z5g",
+  "ParentRef": "PxXJJuDVtEyKTjAMlPTo5w/JtrsRDIkQ0-Dodxo3Cd8Xg",
+  "Created": "2024-06-10T14:41:43.7998022Z",
+  "Updated": "2024-06-10T14:41:43.7998022Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
