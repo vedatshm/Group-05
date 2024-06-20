@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Edge: Instagram Hashtag Generator - SISTRIX",
+  "Type": "App",
+  "Id": "tie6IDuDh0upF9kw_Du5ZQ",
+  "Reference": "PxXJJuDVtEyKTjAMlPTo5w/tie6IDuDh0upF9kw_Du5ZQ",
+  "Created": "2024-06-18T08:55:44.367265Z",
+  "Updated": "2024-06-18T08:55:44.367265Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.10.11.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="ydmOVkg-gEyyR6VqnvPnBw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAuIgAALiIBquLdkgAAAj9JREFUWEfNlj1SwzAQRlPTp84R0nOEDGegp2GGA6TjDLlCKo7ACZjJFejpqeF7yF8i2yvZyjgzFM/Izv7vSmL18PRSZbU/bcWzOIoP8dnB+iAexSbSnUP4EWQUxzjA2U+Fb0Ewr6I5kPGH/elOkHHuGCe8vwsq8SZw+iXyYPi2G9qs0X/Zn9aCrG0QB7zvBL/dZbIE6vbgONd5zu3WuCySwdw52d7nwiUkR3C0wBWhYo+R7JDLImWCIgYocXs/00A6CFo2mUB6pFK652R+/VSnIPJEzm2LSI9UPhSIflbZS+BQuJUEUh1KFDbC2R8ioVZkh4q6FcdIxuQlm4y2BRwLAiC5YksRdLnYSutI6Bpki6GebAOCDB2CkwPTAk6Fh7G4JRH0IVLtVSuydy8cQPFg+hcBUHqEaMXSLcAuVFvgM6A6ra1kdqlC8WxxpJPD0oLscBh5uKu7C2EuEgsv0gbZyJN6jWRMelz2LMy+SiOkT0IebE7DbSRn0qNfBWbhqhNResMrvZo9XBZp2/hOaA5C8iSRO5/MHvov6V7wJcLfyf/z9DtZ03NXMIf7oHq8jz+kIFwJYE1mOOGW4/bkLxVjdjhHPHDgBEw1iPhjcjA0DBg30W9UDF3fhKYYxOiDkYJLizJVGDoEvjHxVOh82GjNPMwKovdSQoqUnWBoD2UH1rQhzmxmED2lpcFZ57QYxEhpaXDWOQ2DCJWWBmed01EQocIt+HM2DuIQCt8KOcyDYPdsQ8FbIqfsqG7bvqx+AWBQo6efum3CAAAAAElFTkSuQmCC" Selector="&lt;html app='msedge.exe' title='Instagram Hashtag Generator - SISTRIX' /&gt;" Title="Instagram Hashtag Generator - SISTRIX" Url="https://app.sistrix.com/de/instagram-hashtags">
+      <imageRef attrName="InformativeScreenshot" originalValue="b64fd20dd5d879290f18d50705d4a816.jpg" xmlns="">0Iz6yCiGHS0WtO9GdD_w3NA</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="WmBLvn7EvUu6bEPtZLLE9A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://app.sistrix.com/de/instagram-hashtags" DesignTimeRectangle="454, 742, 1020, 75" DesignTimeScaleFactor="1.5" FriendlyName="'DIV html-input-1'" FullSelectorArgument="&lt;webctrl id='html-input-1' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='html-input-1' tag='DIV' type='' class='html-input-field' aaname='' /&gt;" Guid="fa0be89a-f52b-4d1c-9b30-52c3a0cf682f" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Instagram Hashtag Generator - SISTRIX' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="450, 467, 1020, 77" ElementType="Text" FriendlyName="'Instagram Hashtag'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='' aaname='Instagram Hashtag Generator' check:innerText='Instagram Hashtag Generator' /&gt;" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="851581364a31efc0777a489a18aaef2a.png" xmlns="">0vJS0iY80LEywQK4eK1_YsQ</imageRef>
+    </TargetAnchorable>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
