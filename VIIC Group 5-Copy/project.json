@@ -7,9 +7,11 @@
     "UiPath.ComplexScenarios.Activities": "[1.5.0]",
     "UiPath.Excel.Activities": "[2.22.4]",
     "UiPath.Mail.Activities": "[1.21.1]",
+    "UiPath.OpenAI.IntegrationService.Activities": "[6.1.0]",
     "UiPath.Presentations.Activities": "[1.12.2]",
     "UiPath.System.Activities": "[23.10.6]",
     "UiPath.UIAutomation.Activities": "[23.10.11]",
+    "UiPath.WebAPI.Activities": "[1.21.0]",
     "UiPath.Word.Activities": "[1.18.1]"
   },
   "webServices": [],
@@ -51,6 +53,14 @@
     "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "223c1681-9d01-4ba5-a1ca-7bfdc5f12b23",
+      "input": [],
+      "output": []
+    }
+  ],
   "isTemplate": true,
   "templateProjectData": {},
   "publishData": {},
