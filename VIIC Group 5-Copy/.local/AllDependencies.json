@@ -22435,15 +22435,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vedat\\.nuget\\packages\\": {}
+    "C:\\Users\\oezde\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "VIIC Group 5-Copy",
       "projectName": "VIIC Group 5-Copy",
-      "projectPath": "C:\\Users\\vedat\\Desktop\\Hochschule\\Semester6\\RPA\\Group-05\\VIIC Group 5-Copy\\.local",
-      "packagesPath": "C:\\Users\\vedat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vedat\\Desktop\\Hochschule\\Semester6\\RPA\\Group-05\\VIIC Group 5-Copy\\.local"
+      "projectPath": "C:\\Users\\oezde\\OneDrive\\Dokumente\\UiPath\\.repositories\\Group-05\\VIIC Group 5-Copy\\.local",
+      "packagesPath": "C:\\Users\\oezde\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\oezde\\OneDrive\\Dokumente\\UiPath\\.repositories\\Group-05\\VIIC Group 5-Copy\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
@@ -22494,7 +22494,7 @@
             "version": "[1.18.1, 1.18.1]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\oezde\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {
