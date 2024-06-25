@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="968.6666666666666,3127.3333333333335" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1042,6613.333333333333" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="96">
       <x:String>System.Activities</x:String>
@@ -119,25 +119,25 @@
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="978.6666666666666,3062.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_15">
+  <Sequence sap:VirtualizedContainerService.HintSize="1052,6548.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_15">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ueab:ExcelApplicationCard Password="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="916.6666666666666,2952" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ReadFormatting="Default" ResizeWindow="None" WorkbookPath="Social--Media-Posts.xlsx">
+    <ueab:ExcelApplicationCard Password="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="990,6438" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ReadFormatting="Default" ResizeWindow="None" WorkbookPath="Social--Media-Posts.xlsx">
       <ueab:ExcelApplicationCard.Body>
         <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="882.6666666666666,2671.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_12">
+          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="956,6164" sap2010:WorkflowViewState.IdRef="Sequence_12">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="820.6666666666666,2560.6666666666665" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_2" Range="[Excel.Sheet(&quot;Tabelle1&quot;)]" SaveAfterEachRow="False">
+            <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="894,6053.333333333333" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_2" Range="[Excel.Sheet(&quot;Tabelle1&quot;)]" SaveAfterEachRow="False">
               <ueab:ExcelForEachRowX.Body>
                 <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
                   <ActivityAction.Argument1>
@@ -146,88 +146,259 @@
                   <ActivityAction.Argument2>
                     <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                   </ActivityAction.Argument2>
-                  <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="786.6666666666666,2362.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="860,5860" sap2010:WorkflowViewState.IdRef="Sequence_13">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Copilot mit GPT-4" sap:VirtualizedContainerService.HintSize="724.6666666666666,2252" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="c8b4be4f-d97c-47a0-a8cc-1234779bd29d" Version="V2">
+                    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Copilot mit GPT-4" sap:VirtualizedContainerService.HintSize="798,5749.333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="c8b4be4f-d97c-47a0-a8cc-1234779bd29d" Version="V2">
                       <uix:NApplicationCard.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="690.6666666666666,2032.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                          <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="764,5530.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_17">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="628.6666666666666,92" sap2010:WorkflowViewState.IdRef="Delay_2" />
-                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Neues Thema'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="628.6666666666666,222.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="c8b4be4f-d97c-47a0-a8cc-1234779bd29d" Text="[&quot;Schreib mir eine Produdktbeschreibung für einen socialmedia post mit emoji und passenden hashtags mit diesen Keywords: &quot; + Keywords.ByField(&quot;Keywords&quot;) + &quot; gib mir nur den Text aus und keine kommentare von dir so dass ich es direkt kopieren kann.&quot;]" Version="V3">
+                            <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="702,91.33333333333333" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Neues Thema'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="702,220" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="c8b4be4f-d97c-47a0-a8cc-1234779bd29d" Text="[&quot;Schreib mir eine Produdktbeschreibung für einen socialmedia post mit emoji und passenden hashtags mit diesen Keywords: &quot; + Keywords.ByField(&quot;Keywords&quot;) + &quot; gib mir nur den Text aus und keine kommentare von dir so dass ich es direkt kopieren kann.&quot;]" Version="V3">
                               <uix:NTypeInto.Target>
                                 <uix:TargetAnchorable BrowserURL="https://www.bing.com/search?q=bing+ai&amp;cvid=ee5401c790d04f858d4574df6caec9f7&amp;gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQABhAMgYIAhAAGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEAAYQDIGCAcQABhAMgYICBAAGEAyCAgJEOkHGPxV0gEIMTQ1NGowajSoAgCwAgA&amp;FORM=ANAB01&amp;PC=LCTS&amp;showconv=1" DesignTimeRectangle="245, 874, 1122, 36" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'TEXTAREA searchbox'" FullSelectorArgument="&lt;webctrl tag='CIB-SERP' /&gt;&lt;webctrl id='cib-action-bar-main' shadowhostid='' tag='CIB-ACTION-BAR' /&gt;&lt;webctrl shadowhostid='cib-action-bar-main' tag='CIB-TEXT-INPUT' /&gt;&lt;webctrl id='searchbox' shadowhostid='' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='CIB-SERP' /&gt;&lt;webctrl id='cib-action-bar-main' shadowhostid='' tag='CIB-ACTION-BAR' /&gt;&lt;webctrl shadowhostid='cib-action-bar-main' tag='CIB-TEXT-INPUT' /&gt;&lt;webctrl id='searchbox' shadowhostid='' tag='TEXTAREA' type='text' class='text-area' aaname='' /&gt;" Guid="36629abd-01d4-4fe4-8b4f-291b12dd867c" InformativeScreenshot="c6a8fbd59ef602a0406b7b5b78176db3.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Copilot mit GPT-4' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                       <uix:Target DesignTimeRectangle="131, 854, 1260, 135" FriendlyName="'Neues Thema'" FullSelectorArgument="&lt;webctrl tag='CIB-SERP' /&gt;&lt;webctrl id='cib-action-bar-main' shadowhostid='' tag='CIB-ACTION-BAR' /&gt;&lt;webctrl shadowhostid='cib-action-bar-main' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='CIB-SERP' /&gt;&lt;webctrl id='cib-action-bar-main' shadowhostid='' tag='CIB-ACTION-BAR' /&gt;&lt;webctrl shadowhostid='cib-action-bar-main' tag='DIV' type='' class='root' aaname='                                                                ' check:innerText='Neues Thema' /&gt;" SearchSteps="FuzzySelector" />
                                     </scg:List>
                                   </uix:TargetAnchorable.Anchors>
                                 </uix:TargetAnchorable>
                               </uix:NTypeInto.Target>
                             </uix:NTypeInto>
-                            <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="628.6666666666666,92" sap2010:WorkflowViewState.IdRef="Delay_3" />
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PATH'" sap:VirtualizedContainerService.HintSize="628.6666666666666,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c8b4be4f-d97c-47a0-a8cc-1234779bd29d" Version="V3">
+                            <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="702,91.33333333333333" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PATH'" sap:VirtualizedContainerService.HintSize="702,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c8b4be4f-d97c-47a0-a8cc-1234779bd29d" Version="V3">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="https://www.bing.com/search?q=bing+ai&amp;cvid=ee5401c790d04f858d4574df6caec9f7&amp;gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQABhAMgYIAhAAGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEAAYQDIGCAcQABhAMgYICBAAGEAyCAgJEOkHGPxV0gEIMTQ1NGowajSoAgCwAgA&amp;FORM=ANAB01&amp;PC=LCTS&amp;showconv=1" DesignTimeRectangle="1344, 942, 24, 24" DesignTimeScaleFactor="1.5" ElementType="Icon" FriendlyName="'PATH'" FullSelectorArgument="&lt;webctrl tag='CIB-SERP' /&gt;&lt;webctrl id='cib-action-bar-main' shadowhostid='' tag='CIB-ACTION-BAR' /&gt;&lt;webctrl shadowhostid='cib-action-bar-main' tag='SVG-ICON' type='send-fill' /&gt;&lt;webctrl shadowhostid='' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='CIB-SERP' /&gt;&lt;webctrl id='cib-action-bar-main' shadowhostid='' tag='CIB-ACTION-BAR' /&gt;&lt;webctrl shadowhostid='cib-action-bar-main' tag='SVG-ICON' type='send-fill' /&gt;&lt;webctrl shadowhostid='' tag='path' type='' class='' aaname='' /&gt;" Guid="c0e29bd8-f258-4cfc-a4bf-2ee77e591ab7" InformativeScreenshot="13a69d5071e10b038b696a3383eaab6f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Copilot mit GPT-4' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                       <uix:Target DesignTimeRectangle="1342, 940, 30, 30" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl tag='CIB-SERP' /&gt;&lt;webctrl id='cib-action-bar-main' shadowhostid='' tag='CIB-ACTION-BAR' /&gt;&lt;webctrl shadowhostid='cib-action-bar-main' tag='SVG-ICON' type='send-fill' /&gt;&lt;webctrl shadowhostid='' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='CIB-SERP' /&gt;&lt;webctrl id='cib-action-bar-main' shadowhostid='' tag='CIB-ACTION-BAR' /&gt;&lt;webctrl shadowhostid='cib-action-bar-main' tag='SVG-ICON' type='send-fill' /&gt;&lt;webctrl shadowhostid='' tag='svg' type='' class='' aaname='' /&gt;" SearchSteps="FuzzySelector" />
                                     </scg:List>
                                   </uix:TargetAnchorable.Anchors>
                                 </uix:TargetAnchorable>
                               </uix:NClick.Target>
                             </uix:NClick>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PATH'" sap:VirtualizedContainerService.HintSize="628.6666666666666,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c8b4be4f-d97c-47a0-a8cc-1234779bd29d" Version="V3">
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PATH'" sap:VirtualizedContainerService.HintSize="702,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c8b4be4f-d97c-47a0-a8cc-1234779bd29d" Version="V3">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="https://www.bing.com/search?pglt=41&amp;q=bing+ai&amp;cvid=6b5e28baed9f4369a5b2d0b13e3153d5&amp;gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDkyBggCEEUYPDIGCAMQRRg8MgYIBBBFGDwyBggFEEUYPDIICAYQ6QcY_FXSAQc4OTBqMGoxqAIAsAIA&amp;FORM=ANNAB1&amp;PC=LCTS&amp;showconv=1" DesignTimeRectangle="284, 595, 20, 25" DesignTimeScaleFactor="1.5" ElementType="Icon" FriendlyName="'PATH'" FullSelectorArgument="&lt;webctrl tag='CIB-SERP' /&gt;&lt;webctrl id='cib-conversation-main' shadowhostid='' tag='CIB-CONVERSATION' /&gt;&lt;webctrl idx='5' shadowhostid='cib-conversation-main' tag='CIB-CHAT-TURN' /&gt;&lt;webctrl class='response-message-group' shadowhostid='' tag='CIB-MESSAGE-GROUP' /&gt;&lt;webctrl shadowhostid='' tag='CIB-MESSAGE' type='text' /&gt;&lt;webctrl shadowhostid='' tag='CIB-MESSAGE-ACTIONS' /&gt;&lt;webctrl shadowhostid='' tag='SVG-ICON' type='copy' /&gt;&lt;webctrl shadowhostid='' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='CIB-SERP' /&gt;&lt;webctrl id='cib-conversation-main' shadowhostid='' tag='CIB-CONVERSATION' /&gt;&lt;webctrl shadowhostid='cib-conversation-main' tag='CIB-CHAT-TURN' /&gt;&lt;webctrl class='response-message-group' shadowhostid='' tag='CIB-MESSAGE-GROUP' /&gt;&lt;webctrl shadowhostid='' tag='CIB-MESSAGE' type='text' /&gt;&lt;webctrl shadowhostid='' tag='CIB-MESSAGE-ACTIONS' /&gt;&lt;webctrl shadowhostid='' tag='SVG-ICON' type='copy' /&gt;&lt;webctrl shadowhostid='' tag='path' type='' class='' aaname='' /&gt;" Guid="65ed54b7-9150-472a-a5e5-527694f38f43" InformativeScreenshot="7fed0745b60f75dac8430da2cec3de10.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Copilot mit GPT-4' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
                                   <uix:TargetAnchorable.Anchors>
-                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                       <uix:Target DesignTimeRectangle="279, 593, 30, 30" ElementType="Icon" FriendlyName="'SVG'" FullSelectorArgument="&lt;webctrl tag='CIB-SERP' /&gt;&lt;webctrl id='cib-conversation-main' shadowhostid='' tag='CIB-CONVERSATION' /&gt;&lt;webctrl idx='5' shadowhostid='cib-conversation-main' tag='CIB-CHAT-TURN' /&gt;&lt;webctrl class='response-message-group' shadowhostid='' tag='CIB-MESSAGE-GROUP' /&gt;&lt;webctrl shadowhostid='' tag='CIB-MESSAGE' type='text' /&gt;&lt;webctrl shadowhostid='' tag='CIB-MESSAGE-ACTIONS' /&gt;&lt;webctrl shadowhostid='' tag='SVG-ICON' type='copy' /&gt;&lt;webctrl shadowhostid='' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='CIB-SERP' /&gt;&lt;webctrl id='cib-conversation-main' shadowhostid='' tag='CIB-CONVERSATION' /&gt;&lt;webctrl shadowhostid='cib-conversation-main' tag='CIB-CHAT-TURN' /&gt;&lt;webctrl class='response-message-group' shadowhostid='' tag='CIB-MESSAGE-GROUP' /&gt;&lt;webctrl shadowhostid='' tag='CIB-MESSAGE' type='text' /&gt;&lt;webctrl shadowhostid='' tag='CIB-MESSAGE-ACTIONS' /&gt;&lt;webctrl shadowhostid='' tag='SVG-ICON' type='copy' /&gt;&lt;webctrl shadowhostid='' tag='svg' type='' class='' aaname='    ' /&gt;" SearchSteps="FuzzySelector" />
                                     </scg:List>
                                   </uix:TargetAnchorable.Anchors>
                                 </uix:TargetAnchorable>
                               </uix:NClick.Target>
                             </uix:NClick>
-                            <ueab:WriteCellX Cell="[Keywords.ByField(&quot;Description&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="628.6666666666666,164.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[ClipboardX.ObjectValue]" />
-                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="628.6666666666666,786.6666666666666" sap2010:WorkflowViewState.IdRef="CommentOut_3">
-                              <ui:CommentOut.Body>
-                                <Sequence DisplayName="Ignorierte Aktivitäten" sap:VirtualizedContainerService.HintSize="592,706.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                            <ueab:WriteCellX Cell="[Keywords.ByField(&quot;Description&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="702,161.33333333333334" sap2010:WorkflowViewState.IdRef="WriteCellX_2" Value="[ClipboardX.ObjectValue]" />
+                            <If Condition="[Keywords.ByField(&quot;Platform&quot;) = &quot;Instagram&quot;]" sap:VirtualizedContainerService.HintSize="702,4293.333333333333" sap2010:WorkflowViewState.IdRef="If_1">
+                              <If.Then>
+                                <Sequence sap:VirtualizedContainerService.HintSize="668,2548" sap2010:WorkflowViewState.IdRef="Sequence_22">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,596" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" WorkbookPath="Social--Media-Posts.xlsx">
-                                    <ueab:ExcelApplicationCard.Body>
-                                      <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Instagram" sap:VirtualizedContainerService.HintSize="626,2460.6666666666665" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" InteractionMode="DebuggerApi" ScopeGuid="936067ab-74c1-4929-bd3e-abb4f8b13fd5" Version="V2">
+                                    <uix:NApplicationCard.Body>
+                                      <ActivityAction x:TypeArguments="x:Object">
                                         <ActivityAction.Argument>
-                                          <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                         </ActivityAction.Argument>
-                                        <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="496,275.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                        <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="592,2242" sap2010:WorkflowViewState.IdRef="Sequence_24">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <ueab:WriteCellX Cell="[Keywords.ByField(&quot;Description&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,164.66666666666666" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[ClipboardX.ObjectValue]" />
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Erstellen'" sap:VirtualizedContainerService.HintSize="530,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="936067ab-74c1-4929-bd3e-abb4f8b13fd5" Version="V3">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://www.instagram.com/" DesignTimeRectangle="113, 759, 89, 30" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'Erstellen'" FullSelectorArgument="&lt;webctrl aaname='Erstellen' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Erstellen' tag='SPAN' type='' class='x1lliihq x193iq5w x6ikm8r x10wlt62 xlyipyv xuxw1ft' check:innerText='Erstellen' /&gt;" Guid="0091faea-cccc-49ab-9e62-02389ba3d747" InformativeScreenshot="10adf0f20ad465efdf2c971602102f19.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Instagram' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                    <uix:Target DesignTimeRectangle="56, 758, 30, 30" ElementType="Icon" FriendlyName="'PATH'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;a&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;svg&amp;gt;path' idx='3' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='' tag='path' aaname='' /&gt;" SearchSteps="FuzzySelector" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NClick.Target>
+                                          </uix:NClick>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Vom Computer auswählen'" sap:VirtualizedContainerService.HintSize="530,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="936067ab-74c1-4929-bd3e-abb4f8b13fd5" Version="V3">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://www.instagram.com/" DesignTimeRectangle="810, 672, 299, 48" DesignTimeScaleFactor="1.5" ElementType="Button" FriendlyName="'Vom Computer auswählen'" FullSelectorArgument="&lt;webctrl aaname='Vom Computer auswählen' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Vom Computer auswählen' tag='BUTTON' type='button' class=' _acan _acap _acas _aj1- _ap30' check:innerText='Vom Computer auswählen' /&gt;" Guid="87dc5d54-dad5-4477-b783-0ba1dfbae78d" InformativeScreenshot="37f62a552d4fa3d7e241db4ae92f6081.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Neuen Beitrag erstellen • Instagram' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                    <uix:Target DesignTimeRectangle="753, 607, 413, 23" ElementType="Text" FriendlyName="'Ziehe Fotos'" FullSelectorArgument="&lt;webctrl aaname='Ziehe Fotos und Videos hierher' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Ziehe Fotos und Videos hierher' tag='SPAN' type='' class='x1lliihq x1plvlek xryxfnj x1n2onr6 x193iq5w xeuugli x1fj9vlw x13faqbe x1vvkbs x1s928wv xhkezso x1gmr53x x1cpjm7i x1fgarty x1943h6x x1i0vuye x1ms8i2q xo1l8bm x5n08af x2b8uid x4zkp8e xw06pyt x10wh9bi x1wdrske x8viiok x18hxmgj' check:innerText='Ziehe Fotos und Videos hierher' /&gt;" SearchSteps="FuzzySelector" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NClick.Target>
+                                          </uix:NClick>
+                                          <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,1728.6666666666667" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_4" ResizeWindow="None" WorkbookPath="Social--Media-Posts.xlsx">
+                                            <ueab:ExcelApplicationCard.Body>
+                                              <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                                <ActivityAction.Argument>
+                                                  <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                                </ActivityAction.Argument>
+                                                <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="496,1454.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Adresse: C:\Users\vedat…'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,220" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="HardwareEvents" ScopeIdentifier="936067ab-74c1-4929-bd3e-abb4f8b13fd5" Text="[string.Format(&quot;{0}{1}&quot;, Keywords.ByField(&quot;Pfad&quot;), &quot;[k(enter)]&quot;.ToString)]" Version="V3">
+                                                    <uix:NTypeInto.Target>
+                                                      <uix:TargetAnchorable DesignTimeRectangle="229, 55, 1235, 53" DesignTimeScaleFactor="1.5" ElementType="Toolbar" FriendlyName="'Adresse: C:\Users\vedat…'" FullSelectorArgument="&lt;wnd aaname='Wird geladen' cls='msctls_progress32' /&gt;&lt;wnd ctrlid='1001' title='Adresse: C:\Users\vedat\Desktop\Hochschule\Semester6\Analyse und*' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Wird geladen' cls='msctls_progress32' /&gt;&lt;wnd ctrlid='1001' title='Adresse: C:\Users\vedat\Desktop\Hochschule\Semester6\Analyse und*' check:text='Adresse: C:\Users\vedat\Desktop\Hochschule\Semester6\Analyse und Auswertung Gesundheitsdaten' /&gt;" Guid="b3ca6522-4d13-40b2-8a5c-90bbccca2491" InformativeScreenshot="90970b1db994c43e52d592436b28077f.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Öffnen' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                                                        <uix:TargetAnchorable.Anchors>
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                            <uix:Target DesignTimeRectangle="163, 58, 55, 55" ElementType="Toolbar" FriendlyName="'Aufwärts-Band'" FullSelectorArgument="&lt;wnd cls='ToolbarWindow32' title='Aufwärts-Band' /&gt;" FuzzySelectorArgument="&lt;wnd cls='ToolbarWindow32' title='Aufwärts-Band' check:text='Aufwärts-Band' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                                                          </scg:List>
+                                                        </uix:TargetAnchorable.Anchors>
+                                                      </uix:TargetAnchorable>
+                                                    </uix:NTypeInto.Target>
+                                                  </uix:NTypeInto>
+                                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into '‎ProductPictures'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,220" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="HardwareEvents" ScopeIdentifier="936067ab-74c1-4929-bd3e-abb4f8b13fd5" Text="[string.Format(&quot;{0}{1}&quot;, Keywords.ByField(&quot;Picture&quot;), &quot;[k(enter)]&quot;.ToString)]" Version="V3">
+                                                    <uix:NTypeInto.Target>
+                                                      <uix:TargetAnchorable DesignTimeRectangle="981, 55, 131, 52" DesignTimeScaleFactor="1.5" FriendlyName="'‎ProductPictures'" FullSelectorArgument="&lt;wnd aaname='Wird geladen' cls='msctls_progress32' /&gt;&lt;wnd ctrlid='1001' title='Adresse: C:\Users\vedat\Desktop\Hochschule\Semester6\RPA\Group-0*' /&gt;&lt;ctrl name='Adresse: C:\Users\vedat\Desktop\Hochschule\Semester6\RPA\Group-0*' role='tool bar' /&gt;&lt;ctrl name='‎ProductPictures' role='menu item' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Wird geladen' cls='msctls_progress32' /&gt;&lt;wnd ctrlid='1001' title='Adresse: C:\Users\vedat\Desktop\Hochschule\Semester6\RPA\Group-0*' /&gt;&lt;ctrl name='Adresse: C:\Users\vedat\Desktop\Hochschule\Semester6\RPA\Group-0*' role='tool bar' /&gt;&lt;ctrl name='‎ProductPictures' role='menu item' automationid='' check:text='‎ProductPictures' /&gt;" Guid="1453aa75-be15-4118-8d91-f058c71b19b4" InformativeScreenshot="72ba063dd38f0aa0d9b222d00b33ee63.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Öffnen' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                                                        <uix:TargetAnchorable.Anchors>
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                            <uix:Target DesignTimeRectangle="229, 55, 1235, 53" ElementType="Toolbar" FriendlyName="'Adresse: C:\Users\vedat…'" FullSelectorArgument="&lt;wnd aaname='Wird geladen' cls='msctls_progress32' /&gt;&lt;wnd ctrlid='1001' title='Adresse: C:\Users\vedat\Desktop\Hochschule\Semester6\RPA\Group-0*' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Wird geladen' cls='msctls_progress32' /&gt;&lt;wnd ctrlid='1001' title='Adresse: C:\Users\vedat\Desktop\Hochschule\Semester6\RPA\Group-0*' check:text='Adresse: C:\Users\vedat\Desktop\Hochschule\Semester6\RPA\Group-05\VIIC Group 5-Copy\ProductPictures' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                                                          </scg:List>
+                                                        </uix:TargetAnchorable.Anchors>
+                                                      </uix:TargetAnchorable>
+                                                    </uix:NTypeInto.Target>
+                                                  </uix:NTypeInto>
+                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Weiter'" sap:VirtualizedContainerService.HintSize="434,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="936067ab-74c1-4929-bd3e-abb4f8b13fd5" Version="V3">
+                                                    <uix:NClick.Target>
+                                                      <uix:TargetAnchorable BrowserURL="https://www.instagram.com/" DesignTimeRectangle="1157, 266, 63, 27" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'Weiter'" FullSelectorArgument="&lt;webctrl aaname='Weiter' aria-role='button' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Weiter' aria-role='button' tag='DIV' type='' class='x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w xdl72j9 x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1q0g3np x1lku1pv x1a2a7pz x6s0dn4 xjyslct x1ejq31n xd10rxx x1sy0etr x17r0tee x9f619 x1ypdohk x1f6kntn xwhw2v2 xl56j7k x17ydfre x2b8uid xlyipyv x87ps6o x14atkfc xcdnw81 x1i0vuye xjbqb8w xm3z3ea x1x8b98j x131883w x16mih1h x972fbf xcfux6l x1qhh985 xm0m39n xt0psk2 xt7dq6l xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x1n5bzlp x173jzuc x1yc6y37' check:innerText='Weiter' /&gt;" Guid="c0ce1a40-f2c7-4527-b93f-a429775e07bf" InformativeScreenshot="a6d45f41e175a328aa4a9147abd0df03.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Neuen Beitrag erstellen • Instagram' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                        <uix:TargetAnchorable.Anchors>
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                            <uix:Target DesignTimeRectangle="786, 262, 347, 36" ElementType="Text" FriendlyName="'Zuschneiden'" FullSelectorArgument="&lt;webctrl aaname='Zuschneiden' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Zuschneiden' tag='DIV' type='' class='_ac7a' check:innerText='Zuschneiden' /&gt;" SearchSteps="FuzzySelector" />
+                                                          </scg:List>
+                                                        </uix:TargetAnchorable.Anchors>
+                                                      </uix:TargetAnchorable>
+                                                    </uix:NClick.Target>
+                                                  </uix:NClick>
+                                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Weiter'" sap:VirtualizedContainerService.HintSize="434,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="936067ab-74c1-4929-bd3e-abb4f8b13fd5" Version="V3">
+                                                    <uix:NClick.Target>
+                                                      <uix:TargetAnchorable BrowserURL="https://www.instagram.com/" DesignTimeRectangle="1412, 266, 63, 27" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'Weiter'" FullSelectorArgument="&lt;webctrl aaname='Weiter' aria-role='button' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Weiter' aria-role='button' tag='DIV' type='' class='x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w xdl72j9 x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1q0g3np x1lku1pv x1a2a7pz x6s0dn4 xjyslct x1ejq31n xd10rxx x1sy0etr x17r0tee x9f619 x1ypdohk x1f6kntn xwhw2v2 xl56j7k x17ydfre x2b8uid xlyipyv x87ps6o x14atkfc xcdnw81 x1i0vuye xjbqb8w xm3z3ea x1x8b98j x131883w x16mih1h x972fbf xcfux6l x1qhh985 xm0m39n xt0psk2 xt7dq6l xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x1n5bzlp x173jzuc x1yc6y37' check:innerText='Weiter' /&gt;" Guid="289487a7-1984-4cf6-a082-1290b87a718d" InformativeScreenshot="c6b0a1e2eefb41b4bafa26b2f655a5ea.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Neuen Beitrag erstellen • Instagram' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                        <uix:TargetAnchorable.Anchors>
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                            <uix:Target DesignTimeRectangle="420, 262, 1079, 36" ElementType="Text" FriendlyName="'Bearbeiten'" FullSelectorArgument="&lt;webctrl aaname='Bearbeiten' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Bearbeiten' tag='DIV' type='' class='_ac7a' check:innerText='Bearbeiten' /&gt;" SearchSteps="FuzzySelector" />
+                                                          </scg:List>
+                                                        </uix:TargetAnchorable.Anchors>
+                                                      </uix:TargetAnchorable>
+                                                    </uix:NClick.Target>
+                                                  </uix:NClick>
+                                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'companymountainbike'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,220" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="936067ab-74c1-4929-bd3e-abb4f8b13fd5" Text="[Keywords.ByField(&quot;Description&quot;)]" Version="V3">
+                                                    <uix:NTypeInto.Target>
+                                                      <uix:TargetAnchorable BrowserURL="https://www.instagram.com/" DesignTimeRectangle="1014, 403, 438, 36" DesignTimeScaleFactor="1.5" FriendlyName="'P'" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='xdj266r x11i5rnm xat24cr x1mh8g0r' aaname='' /&gt;" Guid="3506f9c0-5389-4941-b0dd-eb9797542953" InformativeScreenshot="1e4b90281df842b3ffdea5f69ccbfc1c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Neuen Beitrag erstellen • Instagram' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                        <uix:TargetAnchorable.Anchors>
+                                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                            <uix:Target DesignTimeRectangle="1074, 347, 219, 27" ElementType="Text" FriendlyName="'companymountainbike'" FullSelectorArgument="&lt;webctrl aaname='companymountainbike' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='companymountainbike' tag='SPAN' type='' class='x1lliihq x193iq5w x6ikm8r x10wlt62 xlyipyv xuxw1ft' check:innerText='companymountainbike' /&gt;" SearchSteps="FuzzySelector" />
+                                                          </scg:List>
+                                                        </uix:TargetAnchorable.Anchors>
+                                                      </uix:TargetAnchorable>
+                                                    </uix:NTypeInto.Target>
+                                                  </uix:NTypeInto>
+                                                  <ueab:WriteCellX Cell="[Keywords.ByField(&quot;Postonline&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,161.33333333333334" sap2010:WorkflowViewState.IdRef="WriteCellX_6" Value="[&quot;Finished&quot;]" />
+                                                </Sequence>
+                                              </ActivityAction>
+                                            </ueab:ExcelApplicationCard.Body>
+                                          </ueab:ExcelApplicationCard>
                                         </Sequence>
                                       </ActivityAction>
-                                    </ueab:ExcelApplicationCard.Body>
-                                  </ueab:ExcelApplicationCard>
+                                    </uix:NApplicationCard.Body>
+                                    <uix:NApplicationCard.TargetApp>
+                                      <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Edge" IconBase64="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" InformativeScreenshot="513aca7f9652ecec642ffea8d8de1787.jpg" Selector="&lt;html app='msedge.exe' title='Instagram' /&gt;" Title="Instagram" Url="https://www.instagram.com/" />
+                                    </uix:NApplicationCard.TargetApp>
+                                  </uix:NApplicationCard>
                                 </Sequence>
-                              </ui:CommentOut.Body>
-                            </ui:CommentOut>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence sap:VirtualizedContainerService.HintSize="572,1562" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Home / X" sap:VirtualizedContainerService.HintSize="530,1474.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_8" InteractionMode="DebuggerApi" ScopeGuid="e269a4c7-1016-4f66-a1e8-f645500d1f01" Version="V2">
+                                    <uix:NApplicationCard.Body>
+                                      <ActivityAction x:TypeArguments="x:Object">
+                                        <ActivityAction.Argument>
+                                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                        </ActivityAction.Argument>
+                                        <Sequence DisplayName="Ausführen" sap:VirtualizedContainerService.HintSize="496,1256" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'DIV'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,220" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="e269a4c7-1016-4f66-a1e8-f645500d1f01" Text="[Keywords.ByField(&quot;Description&quot;)]" Version="V3">
+                                            <uix:NTypeInto.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://x.com/home" DesignTimeRectangle="384, 230, 771, 42" DesignTimeScaleFactor="1.5" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='react-root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='react-root' tag='DIV' class='public-DraftStyleDefault-block public-DraftStyleDefault-ltr' aaname='' /&gt;" Guid="41b295e8-b321-472f-b447-19377b35f1ce" InformativeScreenshot="e37b866c9b5d5aa2d42cf75cb97085eb.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home / X' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                    <uix:Target DesignTimeRectangle="308, 221, 60, 60" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;div&amp;gt;div' idx='3' isleaf='1' parentid='react-root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='css-175oi2r r-172uzmj r-1pi2tsx r-13qz1uu r-o7ynqc r-6416eg r-1ny4l3l' isleaf='1' parentid='react-root' tag='DIV' aaname='' /&gt;" SearchSteps="FuzzySelector" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NTypeInto.Target>
+                                          </uix:NTypeInto>
+                                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PATH'" sap:VirtualizedContainerService.HintSize="434,158.66666666666666" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e269a4c7-1016-4f66-a1e8-f645500d1f01" Version="V3">
+                                            <uix:NClick.Target>
+                                              <uix:TargetAnchorable BrowserURL="https://x.com/home" DesignTimeRectangle="387, 378, 23, 23" DesignTimeScaleFactor="1.5" ElementType="Icon" FriendlyName="'PATH'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;nav&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;button&amp;gt;div&amp;gt;svg&amp;gt;g&amp;gt;path' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='path' class='' aaname='' /&gt;" Guid="ec3d0a72-687a-4e15-844e-af6cd821c6e2" InformativeScreenshot="4ba7951bc1ee1045d0848b334f69e89b.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Home / X' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                    <uix:Target DesignTimeRectangle="1059, 363, 99, 54" ElementType="Button" FriendlyName="'Post'" FullSelectorArgument="&lt;webctrl aaname='Post' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Post' tag='BUTTON' type='button' class='css-175oi2r r-sdzlij r-1phboty r-rs99b7 r-lrvibr r-1cwvpvk r-2yi16 r-1qi8awa r-3pj75a r-o7ynqc r-6416eg r-icoktb r-1ny4l3l' check:innerText='Post' /&gt;" SearchSteps="FuzzySelector" />
+                                                    <uix:Target DesignTimeRectangle="189, 223, 33, 34" ElementType="Icon" FriendlyName="'PATH'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;header&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;nav&amp;gt;a&amp;gt;div&amp;gt;div&amp;gt;svg&amp;gt;g&amp;gt;path' tag='path' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='path' class='' aaname='' /&gt;" SearchSteps="FuzzySelector" />
+                                                    <uix:Target DesignTimeRectangle="308, 221, 60, 60" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;div&amp;gt;div' idx='3' isleaf='1' parentid='react-root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='css-175oi2r r-172uzmj r-1pi2tsx r-13qz1uu r-o7ynqc r-6416eg r-1ny4l3l' isleaf='1' parentid='react-root' tag='DIV' aaname='' /&gt;" SearchSteps="FuzzySelector" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NClick.Target>
+                                          </uix:NClick>
+                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into '‎ProductPictures'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,220" sap2010:WorkflowViewState.IdRef="NTypeInto_10" InteractionMode="HardwareEvents" ScopeIdentifier="e269a4c7-1016-4f66-a1e8-f645500d1f01" Text="[Keywords.ByField(&quot;Pfad&quot;)]" Version="V3">
+                                            <uix:NTypeInto.Target>
+                                              <uix:TargetAnchorable DesignTimeRectangle="981, 55, 131, 52" DesignTimeScaleFactor="1.5" FriendlyName="'‎ProductPictures'" FullSelectorArgument="&lt;wnd aaname='Wird geladen' cls='msctls_progress32' /&gt;&lt;wnd ctrlid='1001' title='Adresse: C:\Users\vedat\Desktop\Hochschule\Semester6\RPA\Group-0*' /&gt;&lt;ctrl name='Adresse: C:\Users\vedat\Desktop\Hochschule\Semester6\RPA\Group-0*' role='tool bar' /&gt;&lt;ctrl name='‎ProductPictures' role='menu item' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Wird geladen' cls='msctls_progress32' /&gt;&lt;wnd ctrlid='1001' title='Adresse: C:\Users\vedat\Desktop\Hochschule\Semester6\RPA\Group-0*' /&gt;&lt;ctrl name='Adresse: C:\Users\vedat\Desktop\Hochschule\Semester6\RPA\Group-0*' role='tool bar' /&gt;&lt;ctrl name='‎ProductPictures' role='menu item' automationid='' check:text='‎ProductPictures' /&gt;" Guid="5821a577-3fc6-428b-aa62-35669e15f4c7" InformativeScreenshot="77c9252d291ef30da2942b6f69c5c2b3.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Öffnen' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                    <uix:Target DesignTimeRectangle="229, 55, 1235, 53" ElementType="Toolbar" FriendlyName="'Adresse: C:\Users\vedat…'" FullSelectorArgument="&lt;wnd aaname='Wird geladen' cls='msctls_progress32' /&gt;&lt;wnd ctrlid='1001' title='Adresse: C:\Users\vedat\Desktop\Hochschule\Semester6\RPA\Group-0*' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Wird geladen' cls='msctls_progress32' /&gt;&lt;wnd ctrlid='1001' title='Adresse: C:\Users\vedat\Desktop\Hochschule\Semester6\RPA\Group-0*' check:text='Adresse: C:\Users\vedat\Desktop\Hochschule\Semester6\RPA\Group-05\VIIC Group 5-Copy\ProductPictures' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NTypeInto.Target>
+                                          </uix:NTypeInto>
+                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Datei&amp;name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,220" sap2010:WorkflowViewState.IdRef="NTypeInto_11" InteractionMode="HardwareEvents" ScopeIdentifier="e269a4c7-1016-4f66-a1e8-f645500d1f01" Text="[string.Format(&quot;{0}{1}&quot;, Keywords.ByField(&quot;Picture&quot;), &quot;[k(enter)]&quot;.ToString)]" Version="V3">
+                                            <uix:NTypeInto.Target>
+                                              <uix:TargetAnchorable DesignTimeRectangle="297, 609, 1251, 25" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'Edit'" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="97be4418-6fd0-4eac-ab6c-415da54b86da" InformativeScreenshot="92c00839081b27076d712836a3ed49b1.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Öffnen' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                    <uix:Target DesignTimeRectangle="196, 608, 89, 25" ElementType="Text" FriendlyName="'Datei&amp;name'" FullSelectorArgument="&lt;wnd ctrlid='1090' title='Datei&amp;amp;name:' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='Datei&amp;amp;name:' check:text='Datei&amp;amp;name:' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NTypeInto.Target>
+                                          </uix:NTypeInto>
+                                          <ueab:WriteCellX Cell="[Keywords.ByField(&quot;Postonline&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,161.33333333333334" sap2010:WorkflowViewState.IdRef="WriteCellX_7" Value="[&quot;Finished&quot;]" />
+                                        </Sequence>
+                                      </ActivityAction>
+                                    </uix:NApplicationCard.Body>
+                                    <uix:NApplicationCard.TargetApp>
+                                      <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHMSURBVFhHxZaBkcIgEEUtwRIsISVYgh1oB7ED7UA7MB1YgiVYgiVYAudn7jMLfEhw5jhm3tzlhQDZZTGrT3P/jJQ9kbInUvYkFvf73ZXabreL+i7h+XzOPRuL9XrtXq+Xe7/f7nw+B3ANNptN1L/G5XLxk+N5df+XXG63W//g8XgM7nA4ePd4PKK+JU6nk+8/MzmQ0l2vVz/AMAzBTdPknV2YYhxH3w/pVPcTpAypAPjfuloqsGA0+9wMUnqYCuQydSoVWBQX3bBXpAwwFZg4dTYVnLx1o36QMoAwopRsSOk4Ga/R7EIXImUE82o3FRwWgIlvt5u/P7c5C0iZgcHTSejQFpRbCSkl2HhpjuHQvgg9kVKCibEAWwF0DWWXImWRWipsuTYgZRG+MZo9Jfkj9idVQGy5pWHHX1x/kQopJXxLhFyFnadkYyqkzFC/birsPCUbvh2kjODkGNx6FXY6pGhhKqQM4E3QkHt1n2HHaUjHk3Pht4OUHlvj9vBJYdj3+31wqlwLSOknZHhrkwMbdttXnZyCXHJANFvrNZgKdUrOpCKXttzU/RJMBfYDqgXw3KiMFYuGj8kMG7m0VVKRid5I2RMpeyJlJ1buB0zto6D+OsKYAAAAAElFTkSuQmCC" InformativeScreenshot="78f191e9f9758a40210508185e776660.jpg" Selector="&lt;html app='msedge.exe' title='Home / X' /&gt;" Title="Home / X" Url="https://x.com/home" />
+                                    </uix:NApplicationCard.TargetApp>
+                                  </uix:NApplicationCard>
+                                </Sequence>
+                              </If.Else>
+                            </If>
                           </Sequence>
                         </ActivityAction>
                       </uix:NApplicationCard.Body>
