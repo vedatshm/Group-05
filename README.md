@@ -1,4 +1,7 @@
 # Group-05
+# Github
+https://github.com/vedatshm/Group-05.git
+
 # Welcome to Automated Advertising Deployment Solution
 
 Hello and welcome to our product! By leveraging Robotic Process Automation (RPA), we aim to revolutionize automated advertising deployment across multiple channels such as TikTok, Instagram and Twitter.
